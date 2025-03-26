@@ -1,0 +1,125 @@
+
+
+/*Theme Color File*/
+a,
+.thm-clr{
+    /* color: var(--main-color); */
+
+}
+.main-menu .navigation > li:hover > a, 
+.main-menu .navigation > li.current > a{
+	color:var(--second-color);
+}
+:root{
+    --main-color:#a2222e;
+    --second-color:#80c343;
+    --third-color:#cbc0a4;
+}
+
+
+
+
+/*Background Color*/
+.thm-bg-clr,
+.search-box{
+	background-color:var(--main-color);;
+}
+
+
+
+
+
+
+
+
+
+
+/* Rgba Background color **/
+
+@media only screen and (max-width: 991px){
+/* Background Color */    
+.main-menu .navbar-collapse > .navigation > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > a{
+    background-color: var(--third-color);
+        margin-bottom: 15px;
+        /* color: var(--main-color); */
+        color: rgba(0, 0, 0, 0.511);
+        
+}
+    
+.main-menu .navbar-collapse > .navigation > li > a:hover,
+.main-menu .navbar-collapse > .navigation > li > a:active,
+.main-menu .navbar-collapse > .navigation > li > a:focus,
+.main-menu .navbar-collapse > .navigation > li.current > a,
+.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
+    background: var(--main-color);    
+}    
+    
+/* Border Color */        
+.main-menu .navbar-collapse > .navigation > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li,    
+.main-menu .navbar-collapse > .navigation > li:last-child,
+.main-menu .navbar-collapse > .navigation > li > ul > li:last-child{
+    border-color: #28abd2;        
+}    
+.single-service-item .inner-content .title-holder{
+    height: 105px;
+    padding: 23px 19px 10px;
+}
+.core-value-content {
+    display: flex;
+    justify-content: center;  /* توسيط أفقي */
+    align-items: center;  /* توسيط عمودي */
+    min-height: 100vh; /* يجعل القسم يحتل الشاشة بالكامل */
+    text-align: center;
+}
+
+.core-value-carousel {
+    width: 85%; /* تقليل العرض ليكون متناسقًا في المنتصف */
+}
+
+.single-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* يسمح بتعديل العناصر في الشاشات الصغيرة */
+    padding: 20px;
+    background: #fff; /* يمكنك تعديل الخلفية */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.icon-holder {
+    font-size: 50px;
+    color: var(--primary-color, #ff6600);
+    margin-right: 15px;
+}
+
+.text-holder {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-holder h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-holder p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.core-value-content .single-item .icon-holder span:before{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+    
+}
+
+
+
+
