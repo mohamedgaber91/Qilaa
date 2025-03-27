@@ -584,6 +584,43 @@ function pertnersCarousel () {
         });    		
     }
 }
+function serviceDetailsCarousel () {
+    if ($('.serviceDetails-carousel').length) {
+        $('.serviceDetails-carousel').owlCarousel({
+            dots: false,
+            loop:true,
+            margin:0,
+            nav:true,
+            navText: [
+                '<i class="fa fa-angle-left"></i>',
+                '<i class="fa fa-angle-right"></i>'
+            ],
+            autoplayHoverPause: false,
+            autoplay: 6000,
+            smartSpeed: 1000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                800:{
+                    items:1
+                },
+                1024:{
+                    items:2
+                },
+                1100:{
+                    items:3
+                },
+                1200:{
+                    items:3
+                }
+            }
+        });    		
+    }
+}
 
 
 
@@ -970,6 +1007,7 @@ jQuery(document).on('ready', function () {
         testimonialCarouselbox ();
         projectCarousel ();
         serviceCarousel ();
+        serviceDetailsCarousel ();
         pertnersCarousel()
         contactpageInfoCarousel ();
         contactbox1Carousel ();

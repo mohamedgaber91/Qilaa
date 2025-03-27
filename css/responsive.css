@@ -868,7 +868,7 @@
 =============================================
 ***/ 
 .call-toaction-area {
-    padding-top: 80px;
+    padding-top: 22px;
 }    
 .call-toaction-area ul {
     top: 0px;
@@ -1413,7 +1413,6 @@
     border-radius: 0px !important;
     float: none;
     margin: 0;
-    max-height: 370px;
     overflow: auto;
     padding: 0;
     width: 100%;
@@ -1472,6 +1471,8 @@
     float: none !important;
     width: 100% !important;
     margin-top: 10px;
+    
+    background-color: #cbc0a463;
     margin-bottom: 10px;
 }     
 .main-menu .navbar-collapse .navigation > li{

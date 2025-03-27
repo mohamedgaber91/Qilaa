@@ -40,7 +40,6 @@ a,
 /* Background Color */    
 .main-menu .navbar-collapse > .navigation > li > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li > a{
-    background-color: var(--third-color);
         margin-bottom: 15px;
         /* color: var(--main-color); */
         color: rgba(0, 0, 0, 0.511);
@@ -60,7 +59,7 @@ a,
 .main-menu .navbar-collapse > .navigation > li > ul > li,    
 .main-menu .navbar-collapse > .navigation > li:last-child,
 .main-menu .navbar-collapse > .navigation > li > ul > li:last-child{
-    border-color: #28abd2;        
+    border-color: var(--second-color);        
 }    
 .single-service-item .inner-content .title-holder{
     height: 105px;
