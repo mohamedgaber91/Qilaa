@@ -974,11 +974,16 @@ if($("#appoinment-form").length){
         }
     });
 }
-function prealoader() {
-    $('.preloader').delay(1500).fadeOut(500);
-}
+// function prealoader() {
+//     $('.preloader').delay(1500).fadeOut(500);
+// }
 
-
+/* preloader */
+$( window ).load( function(){ 
+    $( '.preloader' ).fadeOut( 500 );
+  
+    MasonryGrid ();
+  });
 	
 
 
@@ -986,7 +991,6 @@ function prealoader() {
 jQuery(document).on('ready', function () {
 	(function ($) {
         // add your functions
-        prealoader();
 
         mainmenu ();
         languageSwitcher ();
@@ -1043,11 +1047,11 @@ jQuery(window).on('scroll', function(){
 //     jQuery('.preloader').fadeOut('slow');
 // }, 3000);
 
-jQuery(window).on('load', function() {
-    (function($) {
-        enableMasonry();
-    })(jQuery);
-});
+// jQuery(window).on('load', function() {
+//     (function($) {
+//         enableMasonry();
+//     })(jQuery);
+// });
 
 
 // Instance Of Fuction while Window Load event
