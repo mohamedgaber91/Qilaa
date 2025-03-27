@@ -999,10 +999,10 @@ function prealoader() {
 // تنفيذ اللودينج عند بداية التحميل
 prealoader();
 
-// فرض إخفاء اللودينج بعد 3 ثوانٍ كحد أقصى (بغض النظر عن تحميل الصفحة)
-setTimeout(function() {
-    jQuery('.preloader').fadeOut('slow');
-}, 3000);
+// // فرض إخفاء اللودينج بعد 3 ثوانٍ كحد أقصى (بغض النظر عن تحميل الصفحة)
+// setTimeout(function() {
+//     jQuery('.preloader').fadeOut('slow');
+// }, 3000);
 
 jQuery(window).on('load', function() {
     (function($) {
