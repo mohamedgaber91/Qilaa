@@ -156,9 +156,10 @@ function scrollToTop() {
 
 // ===Prealoder===
 function prealoader() {
-    if($('.preloader').length){
-        $('.preloader').delay(2000).fadeOut(500);
-    }
+    // if($('.preloader').length){
+    //     $('.preloader').delay(2000).fadeOut(500);
+    // }
+    $('.preloader').delay(1500).fadeOut(500);
 }
 
 
