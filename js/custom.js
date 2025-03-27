@@ -974,7 +974,9 @@ if($("#appoinment-form").length){
         }
     });
 }
-
+function prealoader() {
+    $('.preloader').delay(1500).fadeOut(500);
+}
 
 
 	
@@ -984,6 +986,8 @@ if($("#appoinment-form").length){
 jQuery(document).on('ready', function () {
 	(function ($) {
         // add your functions
+        prealoader();
+
         mainmenu ();
         languageSwitcher ();
         revolutionSliderActiver ();
@@ -1030,12 +1034,9 @@ jQuery(window).on('scroll', function(){
 	})(jQuery);
 });
 
-function prealoader() {
-    $('.preloader').delay(1500).fadeOut(500);
-}
+
 
 // تنفيذ اللودينج عند بداية التحميل
-prealoader();
 
 // // فرض إخفاء اللودينج بعد 3 ثوانٍ كحد أقصى (بغض النظر عن تحميل الصفحة)
 // setTimeout(function() {
