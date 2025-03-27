@@ -155,10 +155,10 @@ function scrollToTop() {
 
 
 // ===Prealoder===
-// function prealoader() {
+function prealoader() {
 
-//     $('.preloader').delay(1500).fadeOut(500);
-// }
+    $('.preloader').delay(1500).fadeOut(500);
+}
 
 
 
@@ -1002,6 +1002,9 @@ jQuery(window).on('load', function() {
         
     })(jQuery);
 });
+setTimeout(function() {
+    jQuery('.preloader').fadeOut('slow');
+}, 2000);
 
 function showProducts(group) {
     document.getElementById('products-group-1').style.display = 'none';
