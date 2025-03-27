@@ -1472,7 +1472,8 @@
     float: none !important;
     width: 100% !important;
     margin-top: 10px;
-    
+    max-height: 370px;
+    overflow-y: scroll;
     background-color: #cbc0a463;
     margin-bottom: 10px;
 }     

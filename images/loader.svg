@@ -1,0 +1,13 @@
+<svg class="loader" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="60" r="50" stroke="gray" stroke-width="4" fill="none" opacity="0.5"/>
+    
+    <!-- مجموعة تضم جميع المثلثات للدوران المشترك -->
+    <g>
+        <polygon points="60,25 100,90 20,90" fill="none" stroke="#800000" stroke-width="5"/>
+        <polygon points="65,35 95,85 25,85" fill="none" stroke="green" stroke-width="4"/>
+        <polygon points="70,45 90,80 30,80" fill="none" stroke="gray" stroke-width="3"/>
+        
+        <!-- تحريك المجموعة بالكامل مع تحديد نقطة الدوران -->
+        <animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="2s" repeatCount="indefinite"/>
+    </g>
+</svg>

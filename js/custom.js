@@ -980,7 +980,7 @@ if($("#appoinment-form").length){
 
 /* preloader */
 $( window ).load( function(){ 
-    $( '.preloader' ).fadeOut( 500 );
+    $( '#siteLoader' ).fadeOut( 500 );
   
     MasonryGrid ();
   });
