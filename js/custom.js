@@ -41,7 +41,7 @@ function mainmenu() {
 	}
 }
 
-$( '#siteLoader' ).fadeOut( 200 );
+// $( '#siteLoader' ).fadeOut( 200 );
 
 
 
