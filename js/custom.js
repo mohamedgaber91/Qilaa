@@ -155,10 +155,10 @@ function scrollToTop() {
 
 
 // ===Prealoder===
-function prealoader() {
+// function prealoader() {
 
-    $('.preloader').delay(1500).fadeOut(500);
-}
+//     $('.preloader').delay(1500).fadeOut(500);
+// }
 
 
 
@@ -992,19 +992,38 @@ jQuery(window).on('scroll', function(){
 	})(jQuery);
 });
 
+function prealoader() {
+    $('.preloader').delay(1500).fadeOut(500);
+}
+
+// تنفيذ اللودينج عند بداية التحميل
+prealoader();
+
+// فرض إخفاء اللودينج بعد 3 ثوانٍ كحد أقصى (بغض النظر عن تحميل الصفحة)
+setTimeout(function() {
+    jQuery('.preloader').fadeOut('slow');
+}, 3000);
+
+jQuery(window).on('load', function() {
+    (function($) {
+        enableMasonry();
+    })(jQuery);
+});
 
 
 // Instance Of Fuction while Window Load event
-jQuery(window).on('load', function() {
-    (function($) {
-        prealoader ();
-        enableMasonry ();
+// jQuery(window).on('load', function() {
+//     (function($) {
+//         prealoader ();
+//         enableMasonry ();
         
-    })(jQuery);
-});
-setTimeout(function() {
-    jQuery('.preloader').fadeOut('slow');
-}, 2000);
+//     })(jQuery);
+// });
+// setTimeout(function() {
+//     jQuery('.preloader').fadeOut('slow');
+// }, 2000);
+
+
 
 function showProducts(group) {
     document.getElementById('products-group-1').style.display = 'none';
