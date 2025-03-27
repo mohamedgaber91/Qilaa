@@ -41,6 +41,7 @@ function mainmenu() {
 	}
 }
 
+$( '#siteLoader' ).fadeOut( 200 );
 
 
 
@@ -979,11 +980,11 @@ if($("#appoinment-form").length){
 // }
 
 /* preloader */
-$( window ).load( function(){ 
-    $( '#siteLoader' ).fadeOut( 500 );
+// $( window ).load( function(){ 
+//     $( '#siteLoader' ).fadeOut( 500 );
   
-    MasonryGrid ();
-  });
+//     MasonryGrid ();
+//   });
 	
 
 
