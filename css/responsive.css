@@ -1316,6 +1316,7 @@
     position: relative;
     float: none;
     max-width: 295px;
+    max-height: 370px;
     width: 100%;
     padding-top: 7px;
     display: block;
