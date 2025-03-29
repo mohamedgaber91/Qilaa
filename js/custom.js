@@ -1079,77 +1079,29 @@ function showProducts(group) {
     buttons.forEach(btn => btn.classList.remove('active'));
     buttons[group - 1].classList.add('active');
 }
-// document.addEventListener("DOMContentLoaded", function () {
-//     function redirectToGmail(event) {
-//         event.preventDefault();
 
-//         let name = document.getElementById("name").value;
-//         let email = document.getElementById("email").value;
-//         let subject = document.getElementById("subject").value || "No Subject";
-//         let message = document.getElementById("message").value;
-
-//         let mailtoLink = `mailto:2000gaber2000@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
-
-//         window.location.href = mailtoLink;
-//     }
-
-//     document.getElementById("contact-form").addEventListener("submit", redirectToGmail);
-// });
-// document.addEventListener("DOMContentLoaded", function () {
-//     document.getElementById("contact-form").addEventListener("submit", function (event) {
-//         event.preventDefault(); // لمنع الإرسال الفعلي للنموذج
-
-//         // الحصول على القيم التي أدخلها المستخدم
-//         let name =    document.getElementById("name").value;
-//         let email =   document.getElementById("email").value;
-//         let subject = document.getElementById("subject").value || "No Subject";
-//         let message = document.getElementById("message").value;
-
-//         // فتح Gmail في المتصفح مباشرة
-//         let gmailUrl = `https://mail.google.com/mail/?view=cm&to=2000gaber2000@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
-
-//         // إظهار رسالة نجاح
-       
-
-//         // توجيه المستخدم إلى Gmail بعد ثانيتين
-//         setTimeout(function () {
-//             window.open(gmailUrl, "_blank"); // يفتح Gmail في تبويب جديد
-//         }, 2000);
-//         document.getElementById("success-message").style.display = "block";
-//         document.getElementById("name").value=''
-// document.getElementById("email").value=''
-// document.getElementById("subject").value=''
-// document.getElementById("message").value=''
-//     });
-// });
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // منع الإرسال الفعلي للنموذج
+        event.preventDefault(); 
 
-        // الحصول على القيم المدخلة
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let subject = document.getElementById("subject").value || "No Subject";
         let message = document.getElementById("message").value;
 
-        // تكوين رابط Gmail
         let gmailUrl = `https://mail.google.com/mail/?view=cm&to=Office@alqilaa.org&su=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
 
-        // فتح Gmail في نافذة جديدة
         let newWindow = window.open(gmailUrl, "_blank");
 
-        // التحقق مما إذا تم فتح نافذة Gmail بنجاح
         if (newWindow) {
-            // تأخير ظهور رسالة النجاح ومسح الحقول حتى يتم فتح Gmail
             setTimeout(function () {
                 document.getElementById("success-message").style.display = "block";
 
-                // تفريغ الحقول
                 document.getElementById("name").value = '';
                 document.getElementById("email").value = '';
                 document.getElementById("subject").value = '';
                 document.getElementById("message").value = '';
-            }, 2000); // بعد ثانيتين
+            }, 2000); 
         } else {
             alert("⚠️ لم يتم فتح Gmail، يرجى السماح للنوافذ المنبثقة أو المحاولة مرة أخرى.");
         }

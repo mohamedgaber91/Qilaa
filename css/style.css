@@ -7048,7 +7048,7 @@ canvas{
 .loader {
     width: 50px;
     height: 50px;
-    border: 5px solid #800000; /* لون عنابي */
+    border: 5px solid #800000; 
     border-top: 5px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -7089,19 +7089,16 @@ canvas{
 }
 
 
-/* تأثير اهتزاز خفيف للأعلى والأسفل */
 @keyframes floating {
     0% { transform: translateX(0); }
     50% { transform: translateX(-20px); }
     100% { transform: translateX(0); }
 }
 
-/* تطبيق الأنيميشن المستمر */
 .single-project .img-holder{
-    animation: floating 1s ease-in-out; /* يستمر للأبد */
+    animation: floating 1s ease-in-out; 
 }
 
-/* تأثير إضافي عند تمرير الماوس */
 .single-project:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
