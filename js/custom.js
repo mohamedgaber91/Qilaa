@@ -70,8 +70,8 @@ function revolutionSliderActiver () {
 			sliderType:"standard",
 			sliderLayout:"auto",
 			delay:5000,
-            startwidth:1170,
-		    startheight:500,
+            startwidth:2000,
+		    startheight:700,
             
             navigationType:"bullet",
 		    navigationArrows:"0",
