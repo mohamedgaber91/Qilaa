@@ -398,7 +398,7 @@
 =============================================
 ***/  
 .call-toaction-area ul li {
-    max-width: 460px;
+    max-width: 100%;
     float: none;
     border: 1px solid #f2f2f2;
     margin: 0 auto 10px;
@@ -413,7 +413,7 @@
     top: -50px;
 } 
 .single-service-item {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto 40px;
 }    
         
@@ -874,7 +874,7 @@
     top: 0px;
 }    
 .call-toaction-area ul li {
-    max-width: 360px;
+    max-width: 100%;
     float: none;
     border: 1px solid #f2f2f2;
     margin: 0 auto 10px;
@@ -889,7 +889,7 @@
     display: none;
 }
 .single-service-item {
-    max-width: 450px;
+    max-width: 100%;
     margin: 0 auto 40px;
 }    
 
@@ -959,6 +959,10 @@
 }    
 .single-blog-post .img-holder .overlay-style-one {
     transform: translate3d(0px, 108%, 0px);
+}
+.about-right-box ul li {
+   
+    margin-bottom: 80px;
 }
         
 /*** 
@@ -1576,9 +1580,12 @@
       .about-area .container .row .for-mobile{
          display: block;
       }
-      .about-right-box ul li .left-content .title{
+      .left-content .title{
         color: white;
         margin-bottom: 20px;
+      }
+      .about-right-box ul li {
+        margin-bottom: 80px;
       }
       .about-right-box ul li .left-content .title h1{
               /* margin-left: 80%; */
@@ -1586,7 +1593,7 @@
               font-size: 23px;
               position: absolute;
               right: 24px;
-              margin-top: -30px;
+              margin-top: -86px;
               background-color: #8c676b;
               padding: 10px;
       }

@@ -975,16 +975,7 @@ if($("#appoinment-form").length){
         }
     });
 }
-// function prealoader() {
-//     $('.preloader').delay(1500).fadeOut(500);
-// }
 
-/* preloader */
-// $( window ).load( function(){ 
-//     $( '#siteLoader' ).fadeOut( 500 );
-  
-//     MasonryGrid ();
-//   });
 	
 
 
@@ -1041,34 +1032,6 @@ jQuery(window).on('scroll', function(){
 
 
 
-// تنفيذ اللودينج عند بداية التحميل
-
-// // فرض إخفاء اللودينج بعد 3 ثوانٍ كحد أقصى (بغض النظر عن تحميل الصفحة)
-// setTimeout(function() {
-//     jQuery('.preloader').fadeOut('slow');
-// }, 3000);
-
-// jQuery(window).on('load', function() {
-//     (function($) {
-//         enableMasonry();
-//     })(jQuery);
-// });
-
-
-// Instance Of Fuction while Window Load event
-// jQuery(window).on('load', function() {
-//     (function($) {
-//         prealoader ();
-//         enableMasonry ();
-        
-//     })(jQuery);
-// });
-// setTimeout(function() {
-//     jQuery('.preloader').fadeOut('slow');
-// }, 2000);
-
-
-
 function showProducts(group) {
     document.getElementById('products-group-1').style.display = 'none';
     document.getElementById('products-group-2').style.display = 'none';
@@ -1103,7 +1066,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("message").value = '';
             }, 2000); 
         } else {
-            alert("⚠️ لم يتم فتح Gmail، يرجى السماح للنوافذ المنبثقة أو المحاولة مرة أخرى.");
         }
     });
 });
